@@ -36,4 +36,4 @@ _\* di atas adalah os yang saya test, selebihnya bisa di test sendiri._
 
 
 ## Credits 
-- Github: [ JHENZXDOFC ](https://github.com/ndraafvck)
+- Github: [ NDRAAFVCK ](https://github.com/ndraafvck)
