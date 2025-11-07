@@ -7,14 +7,19 @@
 ## Command Install :
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/JhenzXdOfc/Autoinstaller-Theme-Pterodactyl/main/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/ndraafvck/Autoinstaller-Theme-Pterodactyl/main/install.sh)
 ```
 
 ## Fitur Tools :
 
+- Installer Panel
+- Uninstall Panel
+- Hackback Panel
 - Install Tema Stellar
 - Install Tema Billing
 - Install Tema Enigma
+- Install Tema Nebula
+- Install Tema Elysium
 - Uninstall Tema
 
 ## System Support :
