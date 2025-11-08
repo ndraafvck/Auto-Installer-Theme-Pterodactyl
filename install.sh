@@ -76,7 +76,7 @@ check_token() {
 }
 
 # Ddos Tools
-ddos_tools() {
+ddos_tools() 
  while true; do
  if [ "$ddos_tools" ]; then
  echo -e "                                   "
@@ -85,7 +85,7 @@ chmod +x ./ddos
 ./ddos
 
 fi
-}
+
 
 # Install protect panel
 install_protect_panel() {
