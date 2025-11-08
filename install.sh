@@ -637,7 +637,7 @@ while true; do
   echo -e "${RED}        -@#######h       ######@.'    ${NC}"
   echo -e "${RED}       /#####h**''           '*%@####@   ${NC}"
   echo -e "${RED}      @H@*'                      '*'%###@  ${NC}"
-  echo -e "${RED}     *'                                     '* 
+  echo -e "${RED}     *'                                     '* ${NC}"
   echo -e "                                                                     "
   echo -e "BERIKUT ADALAH LIST FITUR:"
   echo "1. Install theme"
