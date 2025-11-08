@@ -11,11 +11,11 @@ NC='\033[0m'
 display_welcome() {
   echo -e ""
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]                                                 [+]${NC}"
-  echo -e "${BLUE}[+]                AUTO INSTALLER THEMA             [+]${NC}"
-  echo -e "${BLUE}[+]                  © CHANDRA HOSTING                [+]${NC}"
-  echo -e "${BLUE}[+]                                                 [+]${NC}"
-  echo -e "${RED}[+] =============================================== [+]${NC}"
+  echo -e "${BLUE}[+]                                                           [+]${NC}"
+  echo -e "${BLUE}[+]                AUTO INSTALLER THEMA                 [+]${NC}"
+  echo -e "${BLUE}[+]                  © CHANDRA HOSTING                  [+]${NC}"
+  echo -e "${BLUE}[+]                                                           [+]${NC}"
+  echo -e "${RED}[+] ================================================ [+]${NC}"
   echo -e ""
   echo -e "script ini dibuat untuk mempermudah penginstalasian thema pterodactyl,"
   echo -e "Dilarang Keras Share Bebas."
@@ -612,15 +612,15 @@ install_theme() {
     read -r SELECT_THEME
     case "$SELECT_THEME" in
       1)
-        THEME_URL=$(echo -e "https://github.com/Bangsano/Autoinstaller-Theme-Pterodactyl/raw/main/stellar.zip")  
+        THEME_URL=$(echo -e "https://github.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/raw/main/stellar.zip")  
         break
         ;;
       2)
-        THEME_URL=$(echo -e "https://github.com/Bangsano/Autoinstaller-Theme-Pterodactyl/raw/main/billing.zip")
+        THEME_URL=$(echo -e "https://github.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/raw/main/billing.zip")
         break
         ;;
       3)
-        THEME_URL=$(echo -e "https://github.com/Bangsano/Autoinstaller-Theme-Pterodactyl/raw/main/enigma.zip")
+        THEME_URL=$(echo -e "https://github.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/raw/main/enigma.zip")
         break
         ;; 
       x)
@@ -748,7 +748,7 @@ uninstall_theme() {
   echo -e "${BLUE}[+]                    DELETE THEME                 [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
-  bash <(curl https://raw.githubusercontent.com/VallzHost/installer-theme/main/repair.sh)
+  bash <(curl https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/main/repair.sh)
   echo -e "                                                       "
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
   echo -e "${GREEN}[+]               DELETE THEME SUCCESS               [+]${NC}"
@@ -767,7 +767,7 @@ echo -e "${BLUE}[+] =============================================== [+]${NC}"
 echo -e "                                                                   "
 
 # Unduh file tema
-wget -O /root/stellar.zip https://github.com/Bangsano/Autoinstaller-Theme-Pterodactyl/raw/main/stellar.zip
+wget -O /root/stellar.zip https://github.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/raw/main/stellar.zip
 
 
 # Ekstrak file tema
@@ -915,14 +915,15 @@ hackback_panel() {
   echo -e "                                                       "
   # Minta input dari pengguna
 read -p "Masukkan Username Panel: " user
-read -p "password login " psswdhb
+read -p "Masukkan Email Admin" emailadp
+read -p "Password Login Admin" psswdhb
   #!/bin/bash
 cd /var/www/pterodactyl || { echo "Direktori tidak ditemukan"; exit 1; }
 
 # Membuat lokasi baru
 php artisan p:user:make <<EOF
 yes
-admin@gmail.com
+$emailadp
 $user
 $user
 $user
@@ -1041,8 +1042,8 @@ install_nebula_theme() {
     fi
 
     # URL Repositori (gunakan HTTPS tanpa autentikasi)
-    local REPO_URL="https://github.com/Bangsano/Autoinstaller-Theme-Pterodactyl.git"
-    local TEMP_DIR="Autoinstaller-Theme-Pterodactyl"
+    local REPO_URL="https://github.com/ndraafvck/Auto-Installer-Theme-Pterodactyl.git"
+    local TEMP_DIR="Auto-Installer-Theme-Pterodactyl"
 
     echo -e "${BLUE}🔄 Mengkloning repositori...${NC}"
     git clone --depth=1 "$REPO_URL"
@@ -1080,8 +1081,8 @@ install_elysium_theme() {
     echo -e "                                                       "
 
     # Repositori tema
-    REPO_URL="https://github.com/Bangsano/Autoinstaller-Theme-Pterodactyl.git"
-    TEMP_DIR="Autoinstaller-Theme-Pterodactyl"
+    REPO_URL="https://github.com/ndraafvck/Auto-Installer-Theme-Pterodactyl.git"
+    TEMP_DIR="Auto-Installer-Theme-Pterodactyl"
 
     echo -e "${GREEN}🔄 Mengkloning repositori...${NC}"
     git clone --depth=1 "$REPO_URL"
@@ -1170,7 +1171,7 @@ while true; do
   echo "6. Create Node"
   echo "7. Uninstall Panel"
   echo "8. Stellar Theme"
-  echo "8. Hack Back Panel"
+  echo "9. Hack Back Panel"
   echo "10. Ubah Pw Vps"
   echo "11. Install Depend"
   echo "12. Install Tema Nebula (wajib install depend terlebih dahulu)"
