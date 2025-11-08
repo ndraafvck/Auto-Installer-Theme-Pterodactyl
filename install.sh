@@ -335,6 +335,266 @@ echo -e "                                                       "
 fi
 }
 
+# Uninstall protect panel
+uninstall_protect_panel() {
+  while true; do
+    echo -e "                                                       "
+    echo -e "${BLUE}[+] =============================================== [+]${NC}"
+    echo -e "${BLUE}[+]                 UNINSTALL PROTECT PANEL              [+]${NC}"
+    echo -e "${BLUE}[+] =============================================== [+]${NC}"
+    echo -e "                                                       "
+    echo -e "PILIH PROTECT PANEL YANG INGIN DI UNINSTALL"
+    echo "1. uninstall protect panel 1"
+    echo "2. uninstall protect panel 2"
+    echo "3. uninstall protect panel 3"
+    echo "4. uninstall protect panel 4"
+    echo "5. uninstall protect panel 5"
+    echo "6. uninstall protect panel 6"
+    echo "7. uninstall protect panel 7"
+    echo "8. uninstall protect panel 8"
+    echo "9. uninstall protect panel 9"
+    echo "10. uninstall protect panel all"
+    echo "x. kembali"
+    echo -e "Masukkan pilihan (1/2/3/x) :"
+    read -r SELECT_UNINSTALL_PROTECT
+    case "$SELECT_UNINSTALL_PROTECT" in
+      1)
+        UNPROTECT_URL1=$(echo -e "https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/refs/heads/main/uninstallprotect1.sh")
+        break
+        ;;
+      2)
+        UNPROTECT_URL2=$(echo -e "https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/refs/heads/main/uninstallprotect2.sh")
+        break
+        ;;
+      3)
+        UNPROTECT_URL3=$(echo -e "https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/refs/heads/main/uninstallprotect3.sh")
+        break
+        ;;
+      4)
+        UNPROTECT_UR4=$(echo -e "https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/refs/heads/main/uninstallprotect4.sh")
+        break
+        ;;
+      5)
+        UNPROTECT_URL5=$(echo -e "https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/refs/heads/main/uninstallprotect5.sh")
+        break
+        ;;
+      6)
+        UNPROTECT_URL6=$(echo -e "https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/refs/heads/main/uninstallprotect6.sh")
+        break
+        ;;
+      7)
+        UNPROTECT_URL7=$(echo -e "https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/refs/heads/main/uninstallprotect7.sh")
+        break
+        ;;
+      8)
+        UNPROTECT_URL8=$(echo -e "https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/refs/heads/main/uninstallprotect8.sh")
+        break
+        ;;
+      9)
+        UNPROTECT_URL9=$(echo -e "https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/refs/heads/main/uninstallprotect9.sh")
+        break
+        ;;
+      10)
+        UNPROTECT_URL10=$(echo -e "https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/refs/heads/main/uninstallprotect1.sh")
+        UNPROTECT_URL10=$(echo -e "https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/refs/heads/main/uninstallprotect2.sh")
+        UNPROTECT_URL10=$(echo -e "https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/refs/heads/main/uninstallprotect3.sh")
+        UNPROTECT_URL10=$(echo -e "https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/refs/heads/main/uninstallprotect4.sh")
+        UNPROTECT_URL10=$(echo -e "https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/refs/heads/main/uninstallprotect5.sh")
+        UNPROTECT_URL10=$(echo -e "https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/refs/heads/main/uninstallprotect6.sh")
+        UNPROTECT_URL10=$(echo -e "https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/refs/heads/main/uninstallprotect7.sh")
+        UNPROTECT_URL10=$(echo -e "https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/refs/heads/main/uninstallprotect8.sh")
+        UNPROTECT_URL10=$(echo -e "https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/refs/heads/main/uninstallprotect9.sh")
+        break
+        ;;
+      x)
+        return
+        ;;
+      *)
+        echo -e "${RED}Pilihan tidak valid, silahkan coba lagi.${NC}"
+        ;;
+    esac
+  done
+  
+if [ "$SELECT_UNINSTALL_PROTECT" -eq 1 ]; then
+  echo -e "                                                       "
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "${BLUE}[+]             UNINSTALL PROTECT PANEL 1              [+]${NC}"
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "                                                                   "
+  curl -fsSL "$UNPROTECT_URL1" | bash
+  
+echo -e "                                                       "
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "${GREEN}[+]                  UNINSTALL SUCCESS                   [+]${NC}"
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e ""
+  sleep 2
+  clear
+  exit 0
+  
+elif [ "$SELECT_UNINSTALL_PROTECT" -eq 2 ]; then
+  echo -e "                                                       "
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "${BLUE}[+]             UNINSTALL PROTECT PANEL 2              [+]${NC}"
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "                                                                   "
+  curl -fsSL "$UNPROTECT_URL2" | bash
+  
+echo -e "                                                       "
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "${GREEN}[+]                  UNINSTALL SUCCESS                   [+]${NC}"
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e ""
+  sleep 2
+  clear
+  exit 0
+  
+elif [ "$SELECT_UNINSTALL_PROTECT" -eq 3 ]; then
+  echo -e "                                                       "
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "${BLUE}[+]             UNINSTALL PROTECT PANEL 3              [+]${NC}"
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "                                                                   "
+  curl -fsSL "$UNPROTECT_URL3" | bash
+  
+echo -e "                                                       "
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "${GREEN}[+]                  UNINSTALL SUCCESS                   [+]${NC}"
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e ""
+  sleep 2
+  clear
+  exit 0
+  
+elif [ "$SELECT_UNINSTALL_PROTECT" -eq 4 ]; then
+  echo -e "                                                       "
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "${BLUE}[+]             UNINSTALL PROTECT PANEL 4              [+]${NC}"
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "                                                                   "
+  curl -fsSL "$UNPROTECT_URL4" | bash
+  
+echo -e "                                                       "
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "${GREEN}[+]                  UNINSTALL SUCCESS                   [+]${NC}"
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e ""
+  sleep 2
+  clear
+  exit 0
+  
+elif [ "$SELECT_UNINSTALL_PROTECT" -eq 5 ]; then
+  echo -e "                                                       "
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "${BLUE}[+]             UNINSTALL PROTECT PANEL 5              [+]${NC}"
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "                                                                   "
+  curl -fsSL "$UNPROTECT_URL5" | bash
+  
+echo -e "                                                       "
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "${GREEN}[+]                  UNINSTALL SUCCESS                   [+]${NC}"
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e ""
+  sleep 2
+  clear
+  exit 0
+  
+elif [ "$SELECT_UNINSTALL_PROTECT" -eq 6 ]; then
+  echo -e "                                                       "
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "${BLUE}[+]             UNINSTALL PROTECT PANEL 6              [+]${NC}"
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "                                                                   "
+  curl -fsSL "$UNPROTECT_URL6" | bash
+  
+echo -e "                                                       "
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "${GREEN}[+]                  UNINSTALL SUCCESS                   [+]${NC}"
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e ""
+  sleep 2
+  clear
+  exit 0
+  
+elif [ "$SELECT_UNINSTALL_PROTECT" -eq 7 ]; then
+  echo -e "                                                       "
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "${BLUE}[+]             UNINSTALL PROTECT PANEL 7              [+]${NC}"
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "                                                                   "
+  curl -fsSL "$UNPROTECT_URL7" | bash
+  
+echo -e "                                                       "
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "${GREEN}[+]                  UNINSTALL SUCCESS                   [+]${NC}"
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e ""
+  sleep 2
+  clear
+  exit 0
+  
+elif [ "$SELECT_UNINSTALL_PROTECT" -eq 8 ]; then
+  echo -e "                                                       "
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "${BLUE}[+]              UNINSTALL PROTECT PANEL 8             [+]${NC}"
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "                                                                   "
+  curl -fsSL "$UNPROTECT_URL8" | bash
+  
+echo -e "                                                       "
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "${GREEN}[+]                  UNINSTALL SUCCESS                   [+]${NC}"
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e ""
+  sleep 2
+  clear
+  exit 0
+  
+elif [ "$SELECT_UNINSTALL_PROTECT" -eq 9 ]; then
+  echo -e "                                                       "
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "${BLUE}[+]              UNINSTALL PROTECT PANEL 9             [+]${NC}"
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "                                                                   "
+  curl -fsSL "$UNPROTECT_URL9" | bash
+  
+echo -e "                                                       "
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "${GREEN}[+]                  UNINSTALL SUCCESS                   [+]${NC}"
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e ""
+  sleep 2
+  clear
+  exit 0
+  
+elif [ "$SELECT_UNINSTALL_PROTECT" -eq 10 ]; then
+  echo -e "                                                       "
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "${BLUE}[+]             UNINSTALL PROTECT PANEL ALL            [+]${NC}"
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "                                                                   "
+  curl -fsSL "https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/refs/heads/main/uninstallprotect1.sh" | bash
+  curl -fsSL "https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/refs/heads/main/uninstallprotect2.sh" | bash
+  curl -fsSL "https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/refs/heads/main/uninstallprotect3.sh" | bash
+  curl -fsSL "https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/refs/heads/main/uninstallprotect4.sh" | bash
+  curl -fsSL "https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/refs/heads/main/uninstallprotect5.sh" | bash
+  curl -fsSL "https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/refs/heads/main/uninstallprotect6.sh" | bash
+  curl -fsSL "https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/refs/heads/main/uninstallprotect7.sh" | bash
+  curl -fsSL "https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/refs/heads/main/uninstallprotect8.sh" | bash
+  curl -fsSL "https://raw.githubusercontent.com/ndraafvck/Auto-Installer-Theme-Pterodactyl/refs/heads/main/uninstallprotect9.sh" | bash
+  
+echo -e "                                                       "
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "${GREEN}[+]                 UNINSTALL SUCCESS                 [+]${NC}"
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e ""
+  sleep 2
+  clear
+  exit 0
+fi
+}
+
 # Install theme
 install_theme() {
   while true; do
@@ -903,17 +1163,18 @@ while true; do
   echo -e "                                                                     "
   echo -e "BERIKUT ADALAH LIST FITUR:"
   echo "1. Install protect panel"
-  echo "2. Install theme"
-  echo "3. Uninstall theme"
-  echo "4. Configure Wings"
-  echo "5. Create Node"
-  echo "6. Uninstall Panel"
-  echo "7. Stellar Theme"
-  echo "7. Hack Back Panel"
-  echo "9. Ubah Pw Vps"
-  echo "10. Install Depend"
-  echo "11. Install Tema Nebula (wajib install depend terlebih dahulu)"
-  echo "12. Install Tema Elysium"
+  echo "2. Uninstall Protect Panel"
+  echo "3. Install theme"
+  echo "4. Uninstall theme"
+  echo "5. Configure Wings"
+  echo "6. Create Node"
+  echo "7. Uninstall Panel"
+  echo "8. Stellar Theme"
+  echo "8. Hack Back Panel"
+  echo "10. Ubah Pw Vps"
+  echo "11. Install Depend"
+  echo "12. Install Tema Nebula (wajib install depend terlebih dahulu)"
+  echo "13. Install Tema Elysium"
   echo "x. Exit"
   echo -e "Masukkan pilihan 1/2/3/.../x:"
   read -r MENU_CHOICE
@@ -924,36 +1185,39 @@ while true; do
       install_protect_panel
       ;;
     2)
-      install_theme
+      uninstall_protect_panel
       ;;
     3)
-      uninstall_theme
+      install_theme
       ;;
     4)
-      configure_wings
+      uninstall_theme
       ;;
     5)
-      create_node
+      configure_wings
       ;;
     6)
-      uninstall_panel
+      create_node
       ;;
     7)
-      install_themeSteeler
+      uninstall_panel
       ;;
     8)
-      hackback_panel
+      install_themeSteeler
       ;;
     9)
-      ubahpw_vps
+      hackback_panel
       ;;
     10)
-      install_depend
+      ubahpw_vps
       ;;
     11)
-      install_nebula_theme
+      install_depend
       ;;
     12)
+      install_nebula_theme
+      ;;
+    13)
       install_elysium_theme
       ;;
     x)
